@@ -1,0 +1,61 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+
+}
+.joy{
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+}
+span{
+    color: green;
+}
+.joy1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background: black;
+    z-index: 2;
+    position: relative;
+}
+
+
+.joy1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10%;
+    border: 2px solid #16a34a);
+    animation: ripple 3s infinite;
+}
+.joy1 {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    margin: 40px auto;
+    padding: 6px;
+    border-radius: 5%;
+    overflow: hidden;
+
+    background: linear-gradient(120deg, rgb(3, 37, 3), green, white);
+    background-size: 300% 300%;
+
+    animation:
+        joyGlow 4s linear infinite,
+        floaty 3s ease-in-out infinite;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
